@@ -2,11 +2,13 @@ from board import Board
 from entity import Entity, SnakeEntity, LadderEntity
 from player import Player
 from dice import Dice
+from pathlib import Path
 
 if __name__ == "__main__":
     entity_list: list[Entity] = []
     player_list: list[Player] = []
-    with open("input.txt", "r", encoding="utf-8") as f:
+    input_file = Path(__file__).resolve().parent / "input.txt"
+    with input_file.open("r", encoding="utf-8") as f:
         s = int(f.readline())
         for _ in range(s):
             head, tail = f.readline().split()
@@ -21,8 +23,8 @@ if __name__ == "__main__":
         for i in range(p):
             player_list.append(Player(f.readline().strip()))
 
-    die: Dice = Dice(12)
-    end = 200
+    die: Dice = Dice()
+    end = 100
     board = Board(player_list, entity_list, die, end)
 
     # Main game loop

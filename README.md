@@ -1,8 +1,25 @@
-# Machine Coding Review Repo
-Get your [practice machine coding](https://workat.tech/machine-coding/practice) solutions reviewed by [Gaurav Chandak](https://www.linkedin.com/in/gcnit/) and get feedback before your machine coding round.
+# Machine Coding Interviews
 
-Steps:
-- [Fork this repo and clone it in your laptop/desktop](https://workattech.github.io/machine-coding-feedback/#setup)
-- Start solving [one of the practice problems](https://workat.tech/machine-coding/practice) in a timed manner. Follow the [best practices](https://workat.tech/machine-coding/article/how-to-ace-machine-coding-round-hi8lnpp8tlmo).
-- [Push the code](https://workattech.github.io/machine-coding-feedback/#submission)
-- Wait for review. Message us on Whatsapp (9732130450) if you need to get it done urgently.
+My Python solutions to machine coding interview practice problems.
+
+Source: [workat.tech](https://workat.tech/machine-coding)
+
+## Completed
+
+- [Snakes and Ladders](snakes_and_ladders/)
+
+## Up next
+
+- [Parking Lot](parking_lot/)
+
+## Running a solution
+
+Requires Python 3.12+. No third-party dependencies.
+
+From the repository root, run Snakes and Ladders:
+
+```sh
+python3 snakes_and_ladders/src/main.py
+```
+
+The program reads `input.txt` beside `main.py`, regardless of the current directory.
